@@ -67,7 +67,7 @@ spring:
             - RewritePath=/comment-service(?<segment>/?.*), $\{segment}
 
         - id: email-service
-          uri: http://localhost:8086
+          uri: http://localhost:8087
           predicates:
             - Path=/email-service/**
           filters:
