@@ -53,14 +53,14 @@ spring:
 
 
         - id: search-service
-          uri: http://localhost:8084
+          uri: http://localhost:8085
           predicates:
             - Path=/search-service/**
           filters:
             - RewritePath=/search-service(?<segment>/?.*), $\{segment}
 
         - id: comment-service
-          uri: http://localhost:8085
+          uri: http://localhost:8084
           predicates:
             - Path=/comment-service/**
           filters:
